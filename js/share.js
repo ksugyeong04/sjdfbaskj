@@ -8,7 +8,7 @@ function setShare(){
   const shareURL = url +'page.result-' + resultAlt+ '.html';
 }
 
-
+function kakaoShare(){ 
   Kakao.Share.sendDefault({
     objectType: 'feed',
     content: {
@@ -66,6 +66,4 @@ function setShare(){
       },
     ],
   });
-function kakaoShare(){ //?????????이게 뭔데
-
 }
