@@ -1,15 +1,23 @@
 const url = 'https://traaaveltest.netlify.app/';
-function kakaoShare(){
+function setShare(){
+  var resulting = document.querySelector('#resultlmg');
+  var resultAlt = resultImg.firstElementChild.alt;
+  const shareTitle = '요기 어때 여행 성향 테스트 결과'
+  const shareDes = infoList[resultAlt].name;
+  const shareImage = url + 'img/image-' + resultAlt + '.png';
+  const shareURL = url +'page.result-' + resultAlt+ '.html';
+}
+
+
   Kakao.Share.sendDefault({
     objectType: 'feed',
     content: {
-      title: '오늘의 디저트',
-      description: '아메리카노, 빵, 케익',
-      imageUrl:
-        'https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+      title: shareTitle,
+      description: shareDes,
+      imageUrl: shareImage,
       link: {
-        mobileWebUrl: 'https://developers.kakao.com',
-        webUrl: 'https://developers.kakao.com',
+        mobileWebUrl: shareURL,
+        webUrl: shareURL,
       },
     },
     itemContent: {
@@ -50,19 +58,14 @@ function kakaoShare(){
     },
     buttons: [
       {
-        title: '웹으로 이동',
+        title: '결과 확인하기',
         link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com',
-        },
-      },
-      {
-        title: '앱으로 이동',
-        link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com',
+          mobileWebUrl: shareURL,
+          webUrl: shareURL,
         },
       },
     ],
   });
+function kakaoShare(){ //?????????이게 뭔데
+
 }
