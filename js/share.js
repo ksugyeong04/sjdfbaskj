@@ -1,3 +1,14 @@
+const url = 'https://traaaveltest.netlify.app/';
+
+function setShare(){
+  var resultImg = document.querySelectot('#resultImg')
+  var resultAlt = resultImg.firstElementChild.alt;
+  const shareTilte = '여행 성향 결과'
+  const shareDes = infoList[resultAlt].name;
+  const shareImg = url + 'img/image-' + resultAlt +'.png';
+  const shareURL = url + 'page.result-' + resultAlt +'.html';
+}
+
 function kakaoShare(){
   Kakao.Share.sendDefault({
     objectType: 'feed',

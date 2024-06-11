@@ -3,11 +3,11 @@ const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
 
 const endPoint = 12;
-const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; //결과 유형 12개 지정
 
 function calResult(){
   console.log(select);
-  var result = select.indexOf(Math.max(...select));
+  var result = select.indexOf(Math.max(...select));//가장 높은 점수를 반환
   return result;
 }
 
