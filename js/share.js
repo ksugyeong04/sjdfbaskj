@@ -18,14 +18,7 @@ function kakaoShare(){
     },
     buttons: [
       {
-        title: '웹으로 이동',
-        link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com',
-        },
-      },
-      {
-        title: '앱으로 이동',
+        title: '나도 하러가기',
         link: {
           mobileWebUrl: 'https://developers.kakao.com',
           webUrl: 'https://developers.kakao.com',
